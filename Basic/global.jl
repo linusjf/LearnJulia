@@ -1,9 +1,19 @@
 #!/usr/bin/env julia
-# Variable scope and the global keyword
-data = [1,2,3]
-s = 0
-beta, gamma = 2, 1
+array1 = [(2n + 1)^2 for n in 1:5]
+array2 = [sqrt(i) for i in array1]
+println(typeof(1:5), " ", typeof(array1), " ", typeof(array2))
+1:5, array1, array2
+    for j in 1:(n - i)
+      if a[j] > a[j + 1]
+        a[j], a[j + 1] = a[j + 1], a[j]
+      end
+    end
+  end
+  return a
+end
 
+data = [65, 51, 32, 12, 23, 84, 68, 1]
+bubbleSort!(data)
 for i in 1:length(data)
   print(i," ")
   global s 
